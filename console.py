@@ -1,14 +1,15 @@
-from typing import Optional, List
-from near_sdk import borsh, collections, Promise, env, near_bindgen, serde
-from near_sdk import AccountId
+#!/usr/bin/python3
+#from typing import Optional, List
+#from near_sdk import borsh, collections, Promise, env, near_bindgen, serde
+#from near_sdk import AccountId
 
 # Function to assign the value of a near coin to a u128 bit value
 def _one_near() -> int:
     return int("1000000000000000000000000")
 
 # Public struct representing a product
-@serde.serialize
-@serde.deserialize
+#@serde.serialize
+#@serde.deserialize
 class Product:
     def __init__(self, name: str, cost: int, quantity: int):
         self.name = name
@@ -16,15 +17,15 @@ class Product:
         self.quantity = quantity
 
 # Public struct representing sales
-@serde.serialize
-@serde.deserialize
+#@serde.serialize
+#@serde.deserialize
 class Sales:
     def __init__(self, product_name: str, quantity: int):
         self.product_name = product_name
         self.quantity = quantity
 
 # Public struct representing Pharmacy
-@near_bindgen
+#@near_bindgen
 class Pharmacy:
     def __init__(self):
         self.sales_history = collections.LookupMap[AccountId, List[Sales]]()
@@ -40,7 +41,7 @@ class Pharmacy:
         pr = Product(name, cost, quantity)
         self.products.push(pr)
 
-    @Promise
+    #@Promise
     def sale_drug(self, name: str, quantity: int):
         index_drug = None
 
