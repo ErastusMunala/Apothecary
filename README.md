@@ -3,16 +3,7 @@
   
   
    <p>This is a simple Pharmacy Management System programmed using Python Django. The system has 5 types of users are the Administrator, Pharmacist, Doctor, and Receptionist(pharmacyClerk) and Patient.This project has user-friendly functionalities.</p>
-   
-   
 
-<div> <img src="https://github.com/tech-jamara/PharmacyManagementSystem/blob/main/screenshot/Admin%20Login.png" width="400" height="200" />
-<img src="https://github.com/tech-jamara/PharmacyManagementSystem/blob/main/screenshot/Pharmacist.png" width="400" height="200" />
-</div>
-<div> <img src="https://github.com/tech-jamara/PharmacyManagementSystem/blob/main/screenshot/Doctor%20Login.png" width="400" height="200" />
-<img src="https://github.com/tech-jamara/PharmacyManagementSystem/blob/main/screenshot/Receptionist%20Login.png" width="400" height="200" />
-    <img src="https://github.com/tech-jamara/PharmacyManagementSystem/blob/main/screenshot/Patient%20login.png" width="400" height="200" />
-</div>
 
 ## Run these Commads
 ### Step 1
@@ -81,10 +72,3 @@
      - Manage Patient's Prescription
      - Manage Personal Account
    
------------------------------------------------------------------------------------
-
-N/B: When adding New patient there are some validations in filling the forms 
-     For easy filling of forms use fake filler extension in chrome 
-     Fake Filler Extension Chrome link:https://chrome.google.com/webstore/detail/fake-filler/bnjjngeaknajbdcgpfkgnonkmififhfo
-
---------------------------------------------------------------------------------------
